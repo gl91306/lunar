@@ -1,0 +1,43 @@
+{
+  "name": "lunarclient",
+  "version": "2.7.0",
+  "description": "Lunar Client",
+  "repository": "https://github.com/LunarClient/Launcher",
+  "author": "Moonsworth, LLC",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "electron-log": "^4.2.4",
+    "electron-progressbar": "^1.2.0",
+    "electron-store": "^5.1.1",
+    "electron-updater": "^4.3.4",
+    "jquery": "^3.6.0",
+    "minecraft-pinger": "^1.0.5",
+    "node-downloader-helper": "^1.0.13",
+    "node-fetch": "^2.6.1",
+    "node-machine-id": "^1.1.12",
+    "p-queue": "^6.6.1",
+    "popper.js": "1.14.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "source-map-support": "^0.5.16",
+    "tar-fs": "^2.0.0",
+    "universal-analytics": "^0.4.23",
+    "unzip-stream": "^0.3.1"
+  },
+  "main": "main.js",
+  "build": {
+    "appId": "your.id",
+    "linux": {
+      "category": "your.app.category.type",
+      "target": "AppImage",
+      "icon": "/home/pi/lunarclient/lunarclient.png"
+    }
+  },
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  }
+}
