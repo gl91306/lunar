@@ -23,7 +23,7 @@ wget https://github.com/gl91306/lunar/blob/master/lunarclient-2.7.0-armv7l.AppIm
 sudo chmod +x ~/lunarclient-2.7.0-armv7l.AppImage
 
 #Run launcher
-~/lunarclient-2.7.0-armv7l.AppImage
+$HOME/lunarclient-2.7.0-armv7l.AppImage
 
 #Handle error about jvm
 #Copy jdk version into ~/.lunarclient/jre/zulu8.52.0.23-ca-fx-jre8.0.282-linux_x64
@@ -34,7 +34,7 @@ echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
 Name=\"Lunar-Client for Rpi\"
 Comment=\"Lunar-Client for Rpi made by PiKATchu on Discord.\"
-Exec=~/lunarclient-2.7.0-armv7l.AppImage
+Exec=$HOME/lunarclient-2.7.0-armv7l.AppImage
 Icon=~/.lunarclient/icon.png
 Categories=Utility;
 Type=Application
