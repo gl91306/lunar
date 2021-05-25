@@ -27,6 +27,7 @@ $HOME/lunarclient-2.7.0-armv7l.AppImage
 
 #Handle error about jvm
 #Copy jdk version into ~/.lunarclient/jre/zulu8.52.0.23-ca-fx-jre8.0.282-linux_x64
+rm -rf ~/.lunarclient/jre/zulu8.52.0.23-ca-fx-jre8.0.282-linux_x64
 sudo cp /opt/jdk/jdk1.8.0_251/jre ~/.lunarclient/jre/zulu8.52.0.23-ca-fx-jre8.0.282-linux_x64
 
 #Then make menu button
