@@ -8,4 +8,6 @@ Theres also a script for automaticly changing lwjgl args for arm.
 you need to install jdk-8-defualt
 also you need the 2 lwjgl folders https://github.com/mikehooper/Minecraft
 
+also be sure to copy the webp file to BOTH your lwjgl folders
+
 Thats it!
