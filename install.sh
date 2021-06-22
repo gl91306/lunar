@@ -16,8 +16,9 @@ fi
 #Run modprobe fuse
 sudo modprobe fuse
 
+cd
 #Download client
-wget https://github.com/gl91306/lunar/blob/master/lunarclient-2.7.3a-armv7l.AppImage?raw=true
+wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.7.3a-armv7l.AppImage
 if [ ! -d ~/lwjgl3arm32 ]; then
     mkdir ~/lwjgl3arm32
 fi
