@@ -55,7 +55,7 @@ cd lwjgl3arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
 cd
 cd /opt/jdk/opt/jdk
-sudo cp jdk-16.0.1+9-jre /opt/jdk
+sudo cp -r jdk-16.0.1+9-jre /opt/jdk
 cd /opt/jdk
 sudo rm -rf opt
 cd
