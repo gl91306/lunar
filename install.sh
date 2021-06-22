@@ -18,7 +18,7 @@ sudo modprobe fuse
 
 cd
 #Download client
-wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.7.3a-armv7l.AppImage
+wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.7.3b-armv7l.AppImage
 if [ ! -d ~/lwjgl3arm32 ]; then
     mkdir ~/lwjgl3arm32
 fi
@@ -27,6 +27,9 @@ if [ ! -d ~/lwjgl2arm32 ]; then
 fi
 if [ ! -f jdk-8u251-linux-arm32-vfp-hflt.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/jdk-8u251-linux-arm32-vfp-hflt.tar.gz
+fi
+if [ ! -f jdk-16.0.1+9-jre.tar.gz ]; then
+    wget https://github.com/gl91306/lunar/raw/master/jdk-16.0.1%2B9-jre.tar.gz
 fi
 if [ ! -f lwjgl3arm32.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm32.tar.gz
@@ -38,6 +41,7 @@ if [ ! -d /opt/jdk ]; then
     sudo mkdir /opt/jdk
 fi
 sudo tar -zxf jdk-8u251-linux-arm32-vfp-hflt.tar.gz -C /opt/jdk
+sudo tar -zxf jdk-16.0.1+9-jre.tar.gz -C /opt/jdk
 tar -zxf lwjgl3arm32.tar.gz -C ~/lwjgl3arm32
 tar -zxf lwjgl2arm32.tar.gz -C ~/lwjgl2arm32
 sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_251/bin/java 0
@@ -50,6 +54,11 @@ cd
 cd lwjgl3arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
 cd
+cd /opt/jdk/opt/jdk
+sudo cp jdk-16.0.1+9-jre /opt/jdk
+cd /opt/jdk
+sudo rm -rf opt
+cd
 cd /opt/jdk/jdk1.8.0_251
 sudo rm -rf jre
 echo please wait a bit, as this step takes a bit
@@ -57,10 +66,10 @@ sudo apt-get install subversion
 sudo svn checkout https://github.com/gl91306/lunar/trunk/jre
 cd
 #Change perms of Launcher
-sudo chmod +x $HOME/lunarclient-2.7.3a-armv7l.AppImage
+sudo chmod +x $HOME/lunarclient-2.7.3b-armv7l.AppImage
 
 #Run launcher
-$HOME/lunarclient-2.7.3a-armv7l.AppImage
+$HOME/lunarclient-2.7.3b-armv7l.AppImage
 
 #Handle error about jvm
 #Copy jdk version into ~/.lunarclient/jre/zulu8.52.0.23-ca-fx-jre8.0.282-linux_x64
@@ -70,7 +79,7 @@ echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
 Name=Lunar-Client for Rpi
 Comment=Lunar-Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.7.3a-armv7l.AppImage
+Exec=$HOME/lunarclient-2.7.3b-armv7l.AppImage
 Icon=$HOME/.lunarclient/icon.png
 Categories=Utility;
 Type=Application
