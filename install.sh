@@ -67,8 +67,8 @@ $HOME/lunarclient-2.7.3a-armv7l.AppImage
 #Then make menu button
 echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
-Name=\"Lunar-Client for Rpi\"
-Comment=\"Lunar-Client for Rpi made by PiKATchu on Discord.\"
+Name=Lunar-Client for Rpi
+Comment=Lunar-Client for Rpi made by PiKATchu on Discord.
 Exec=$HOME/lunarclient-2.7.3a-armv7l.AppImage
 Icon=$HOME/.lunarclient/icon.png
 Categories=Utility;
