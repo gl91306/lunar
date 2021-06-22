@@ -51,7 +51,7 @@ cd lwjgl3arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
 cd
 cd /opt/jdk/jdk1.8.0_251
-sudo rm -rf /jre
+sudo rm -rf jre
 echo please wait a bit, as this step takes a bit
 sudo apt-get install subversion
 sudo svn checkout https://github.com/gl91306/lunar/trunk/jre
