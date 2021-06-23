@@ -65,6 +65,10 @@ echo please wait a bit, as this step takes a bit
 sudo apt-get install subversion
 sudo svn checkout https://github.com/gl91306/lunar/trunk/jre
 cd
+sudo apt-get install unzip
+wget https://github.com/gl91306/lunar/raw/master/javafx-sdk-17.zip
+unzip javafx-sdk-17.zip -d /home/pi/Desktop
+cd
 #Change perms of Launcher
 sudo chmod +x $HOME/lunarclient-2.7.3b-armv7l.AppImage
 
