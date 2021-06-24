@@ -5,14 +5,9 @@ There is also a script for automatically changing the lwjgl args for arm.
 
 # Dependecies
 
-Clone the repository, make sure `git` is installed first
+Download the install script and run it.
 ```
-git clone https://github.com/gl91306/lunar
-```
-
-Change the directory, make script executable, and run it!
-```
-cd lunar
+wget https://raw.githubusercontent.com/gl91306/lunar/master/install.sh
 chmod +x install.sh
 ./install.sh
 ```
