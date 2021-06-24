@@ -74,6 +74,12 @@ sudo chmod +x $HOME/lunarclient-2.7.3b-armv7l.AppImage
 
 #Run launcher
 $HOME/lunarclient-2.7.3b-armv7l.AppImage
+cd
+rm -rf jdk-8u251-linux-arm32-vfp-hflt.tar.gz
+rm -rf jdk-16.0.1+9-jre.tar.gz
+rm -rf javafx-sdk-17.zip
+rm -rf lwjgl2arm32.tar.gz
+rm -rf lwjgl3arm32.tar.gz
 
 #Handle error about jvm
 #Copy jdk version into ~/.lunarclient/jre/zulu8.52.0.23-ca-fx-jre8.0.282-linux_x64
