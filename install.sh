@@ -81,16 +81,29 @@ rm -rf javafx-sdk-17.zip
 rm -rf lwjgl2arm32.tar.gz
 rm -rf lwjgl3arm32.tar.gz
 
-#Handle error about jvm
-#Copy jdk version into ~/.lunarclient/jre/zulu8.52.0.23-ca-fx-jre8.0.282-linux_x64
+#Add icon
+cd
+mkdir lunarassets
+cd lunarassets
+wget https://github.com/gl91306/lunar/raw/master/lunarclient.png
+cd
 
-#Then make menu button
+#Then make menu button & desktop icon
 echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
-Name=Lunar-Client for Rpi
-Comment=Lunar-Client for Rpi made by PiKATchu on Discord.
+Name=Lunar Client
+Comment=Lunar Client for Rpi made by PiKATchu on Discord.
 Exec=$HOME/lunarclient-2.7.3b-armv7l.AppImage
-Icon=$HOME/.lunarclient/icon.png
-Categories=Utility;
+Icon=$HOME/lunarassets/lunarclient.png
+Categories=Game;
 Type=Application
 Terminal=false" > "$HOME/.local/share/applications/Lunar-Client.desktop"
+
+echo "[Desktop Entry]
+Name=Lunar Client
+Comment=Lunar Client for Rpi made by PiKATchu on Discord.
+Exec=$HOME/lunarclient-2.7.3b-armv7l.AppImage
+Icon=$HOME/lunarassets/lunarclient.png
+Categories=Game;
+Type=Application
+Terminal=false" > "$HOME/Desktop/Lunar Client"
