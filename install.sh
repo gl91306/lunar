@@ -50,9 +50,13 @@ sudo update-alternatives --set java /opt/jdk/jdk1.8.0_251/bin/java
 sudo update-alternatives --set javac /opt/jdk/jdk1.8.0_251/bin/javac
 cd lwjgl2arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
+wget https://github.com/gl91306/lunar/raw/master/libgstreamer-lite.so
+wget https://github.com/gl91306/lunar/raw/master/libjfxmedia.so
 cd
 cd lwjgl3arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
+wget https://github.com/gl91306/lunar/raw/master/libgstreamer-lite.so
+wget https://github.com/gl91306/lunar/raw/master/libjfxmedia.so
 cd
 cd /opt/jdk/opt/jdk
 sudo cp -r jdk-16.0.1+9-jre /opt/jdk
@@ -68,6 +72,11 @@ cd
 sudo apt-get install unzip
 wget https://github.com/gl91306/lunar/raw/master/javafx-sdk-17.zip
 unzip javafx-sdk-17.zip -d /home/pi/Desktop
+cd Desktop
+cd javafx-sdk-17
+cd lib
+rm -rf libjfxwebkit.so
+wget https://github.com/gl91306/lunar/raw/master/libjfxwebkit.so
 cd
 #Change perms of Launcher
 sudo chmod +x $HOME/lunarclient-2.7.3b-armv7l.AppImage
