@@ -13,3 +13,5 @@ chmod +x install.sh
 ```
 
 Thats it!
+
+Heres a youtube video for the installation: https://youtu.be/-2LZG9YSKZg
