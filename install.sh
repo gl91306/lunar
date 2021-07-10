@@ -71,8 +71,8 @@ sudo svn checkout https://github.com/gl91306/lunar/trunk/jre
 cd
 sudo apt-get install unzip
 wget https://github.com/gl91306/lunar/raw/master/javafx-sdk-17.zip
-unzip javafx-sdk-17.zip -d /home/pi/Desktop
-cd Desktop
+unzip javafx-sdk-17.zip -d /home/$HOME/lunarassets
+cd lunarassets
 cd javafx-sdk-17
 cd lib
 rm -rf libjfxwebkit.so
