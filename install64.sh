@@ -31,7 +31,7 @@ fi
 if [ ! -d /opt/jdk ]; then
     sudo mkdir /opt/jdk
 fi
-sudo tar -zxf jdk-16.0.1+9-jre64.tar.gz -C /opt/jdk
+sudo tar -zxf jdk-16.0.1+9-jre64.gz -C /opt/jdk
 tar -zxf lwjgl3arm64.tar.gz -C ~/lwjgl3arm64
 sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk-16.0.1+9-jre64/bin/java 0
 sudo update-alternatives --set java /opt/jdk/jdk-16.0.1+9-jre64/bin/java
