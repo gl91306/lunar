@@ -22,7 +22,7 @@ wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.7.3c-aarch64.AppI
 if [ ! -d ~/lwjgl3arm64 ]; then
     mkdir ~/lwjgl3arm64
 fi
-if [ ! -f jdk-16.0.1+9-jre64.tar.gz ]; then
+if [ ! -f jdk-16.0.1+9-jre64.gz ]; then
     wget https://github.com/gl91306/lunar/raw/master/jdk-16.0.1%2B9-jre64.gz
 fi
 if [ ! -f lwjgl3arm64.tar.gz ]; then
@@ -50,7 +50,7 @@ sudo chmod +x $HOME/lunarclient-2.7.3c-aarch64.AppImage
 #Run launcher
 $HOME/lunarclient-2.7.3c-aarch64.AppImage
 cd
-rm -rf jdk-16.0.1+9-jre64.tar.gz
+rm -rf jdk-16.0.1+9-jre64.gz
 rm -rf javafx-sdk-17-64.zip
 rm -rf lwjgl3arm64.tar.gz
 cd
