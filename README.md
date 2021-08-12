@@ -2,6 +2,8 @@
 
 This is a build of the Moonsworth Lunar Client for ARM processors. Because Lunar Client's API does not support ARM, I added some code that fetches your own java instead of Lunars custom one.
 There is also a script for automatically changing the lwjgl args for ARM.
+There's also support for Microsoft Accounts!
+
 
 # Dependecies
 
