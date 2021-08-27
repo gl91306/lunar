@@ -71,6 +71,7 @@ sudo svn checkout https://github.com/gl91306/lunar/trunk/jre
 cd
 sudo apt-get install unzip
 wget https://github.com/gl91306/lunar/raw/master/javafx-sdk-17.zip
+mkdir lunarassets
 unzip javafx-sdk-17.zip -d $HOME/lunarassets
 cd lunarassets
 cd javafx-sdk-17
@@ -96,7 +97,6 @@ cp lwjgl3arm32/libopenal.so $HOME/lwjgl2arm32
 
 #Add icon
 cd
-mkdir lunarassets
 cd lunarassets
 wget https://github.com/gl91306/lunar/raw/master/lunarclient.png
 cd
