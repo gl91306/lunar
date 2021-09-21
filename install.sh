@@ -71,7 +71,8 @@ sudo svn checkout https://github.com/gl91306/lunar/trunk/jre
 cd
 sudo apt-get install unzip
 wget https://github.com/gl91306/lunar/raw/master/javafx-sdk-17.zip
-unzip javafx-sdk-17.zip -d /home/$HOME/lunarassets
+mkdir lunarassets
+unzip javafx-sdk-17.zip -d $HOME/lunarassets
 cd lunarassets
 cd javafx-sdk-17
 cd lib
@@ -82,7 +83,6 @@ cd
 sudo chmod +x $HOME/lunarclient-2.8.0-armv7l.AppImage
 
 #Run launcher
-#$HOME/lunarclient-2.8.0-armv7l.AppImage
 cd
 rm -rf jdk-8u251-linux-arm32-vfp-hflt.tar.gz
 rm -rf jdk-16.0.1+9-jre.tar.gz
@@ -97,7 +97,6 @@ cp lwjgl3arm32/libopenal.so $HOME/lwjgl2arm32
 
 #Add icon
 cd
-mkdir lunarassets
 cd lunarassets
 wget https://github.com/gl91306/lunar/raw/master/lunarclient.png
 cd
@@ -121,3 +120,5 @@ Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
 Terminal=false" > "$HOME/Desktop/Lunar Client"
+
+$HOME/lunarclient-2.7.3c-armv7l.AppImage
