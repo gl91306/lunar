@@ -18,7 +18,7 @@ sudo modprobe fuse
 
 cd
 #Download client
-wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.7.3c-armv7l.AppImage
+wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.8.0-armv7l.AppImage
 if [ ! -d ~/lwjgl3arm32 ]; then
     mkdir ~/lwjgl3arm32
 fi
@@ -79,10 +79,10 @@ rm -rf libjfxwebkit.so
 wget https://github.com/gl91306/lunar/raw/master/libjfxwebkit.so
 cd
 #Change perms of Launcher
-sudo chmod +x $HOME/lunarclient-2.7.3c-armv7l.AppImage
+sudo chmod +x $HOME/lunarclient-2.8.0-armv7l.AppImage
 
 #Run launcher
-$HOME/lunarclient-2.7.3c-armv7l.AppImage
+#$HOME/lunarclient-2.8.0-armv7l.AppImage
 cd
 rm -rf jdk-8u251-linux-arm32-vfp-hflt.tar.gz
 rm -rf jdk-16.0.1+9-jre.tar.gz
@@ -107,7 +107,7 @@ echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.7.3c-armv7l.AppImage
+Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
@@ -116,7 +116,7 @@ Terminal=false" > "$HOME/.local/share/applications/Lunar-Client.desktop"
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.7.3c-armv7l.AppImage
+Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
