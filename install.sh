@@ -57,6 +57,7 @@ cd lwjgl3arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
 wget https://github.com/gl91306/lunar/raw/master/libgstreamer-lite.so
 wget https://github.com/gl91306/lunar/raw/master/libjfxmedia.so
+https://github.com/gl91306/lunar/raw/master/liblwjgl_tinyfd.so
 cd
 cd /opt/jdk/opt/jdk
 sudo cp -r jdk-16.0.1+9-jre /opt/jdk
