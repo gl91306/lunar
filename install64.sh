@@ -2,28 +2,11 @@
 #Script created by oxmc
 #Made for Lunar-Client by gl91306
 
-#install modprobe if not already installed
-if ! command -v modprobe >/dev/null;then
-  
-  if [ -f /usr/bin/apt ];then
-    sudo apt update
-    sudo apt install -y modprobe || echo "Failed to install modprobe."
-  else
-    error "Failed to find any package manager to install modprobe."
-  fi
-fi
-
-#Run modprobe fuse
-sudo modprobe fuse
-
 cd
 #Download client
 wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.8.0-arm64.AppImage
 if [ ! -d ~/lwjgl3arm64 ]; then
     mkdir ~/lwjgl3arm64
-fi
-if [ ! -f jdk-16.0.1+9-jre64.gz ]; then
-    wget https://github.com/gl91306/lunar/raw/master/jdk-16.0.1%2B9-jre64.gz
 fi
 if [ ! -f lwjgl3arm64.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm64.tar.gz
