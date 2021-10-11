@@ -20,8 +20,6 @@ fi
 sudo tar -zxf jdk-16.0.1+9-jre64.gz -C /opt/jdk
 tar -zxf lwjgl3arm64.tar.gz -C ~/lwjgl3arm64
 tar -zxf lwjgl2arm64.tar -C ~/lwjgl2arm64
-sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk-16.0.1+9-jre64/bin/java 0
-sudo update-alternatives --set java /opt/jdk/jdk-16.0.1+9-jre64/bin/java
 cd
 cd lwjgl3arm64
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio64.so
