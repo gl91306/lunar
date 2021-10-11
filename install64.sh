@@ -14,6 +14,9 @@ fi
 if [ ! -f lwjgl2arm64.tar ]; then
     wget https://github.com/gl91306/lunar/raw/main/lwjgl2arm64.tar
 fi
+if [ ! -f jdk-16.0.1+9-jre64.gz ]; then
+    wget https://github.com/gl91306/lunar/raw/master/jdk-16.0.1%2B9-jre64.gz
+fi
 if [ ! -d /opt/jdk ]; then
     sudo mkdir /opt/jdk
 fi
