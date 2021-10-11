@@ -12,7 +12,7 @@ if [ ! -f lwjgl3arm64.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm64.tar.gz
 fi
 if [ ! -f lwjgl2arm64.tar ]; then
-    wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl2arm64.tar
+    wget https://github.com/gl91306/lunar/raw/main/lwjgl2arm64.tar
 fi
 if [ ! -d /opt/jdk ]; then
     sudo mkdir /opt/jdk
