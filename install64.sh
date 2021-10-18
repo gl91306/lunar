@@ -12,7 +12,7 @@ if [ ! -f lwjgl3arm64.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm64.tar.gz
 fi
 if [ ! -f lwjgl2arm64.tar ]; then
-    wget https://github.com/gl91306/lunar/raw/main/lwjgl2arm64.tar
+    https://raw.githubusercontent.com/gl91306/lunar/03b8f8735ba30d2a849a4d7321254b085f00cb88/lwjgl2arm64.tar
 fi
 if [ ! -f jdk-16.0.1+9-jre64.gz ]; then
     wget https://github.com/gl91306/lunar/raw/master/jdk-16.0.1%2B9-jre64.gz
