@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd
 rm -rf .lunarclient
 rm -rf lunarclient-2.7.3c-armv7l.AppImage
