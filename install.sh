@@ -15,8 +15,8 @@ fi
 if [ ! -d ~/lwjgl2arm32 ]; then
     mkdir ~/lwjgl2arm32
 fi
-if [ ! -f jdk-16.0.1+9-jre.tar.gz ]; then
-    wget https://github.com/gl91306/lunar/raw/master/jdk-16.0.1%2B9-jre.tar.gz
+if [ ! -f OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz ]; then
+    wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz
 fi
 if [ ! -f lwjgl3arm32.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm32.tar.gz
@@ -27,7 +27,7 @@ fi
 if [ ! -d /opt/jdk ]; then
     sudo mkdir /opt/jdk
 fi
-sudo tar -zxf jdk-16.0.1+9-jre.tar.gz -C /opt/jdk
+sudo tar -zxf OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz -C /opt/jdk
 tar -zxf lwjgl3arm32.tar.gz -C ~/lwjgl3arm32
 tar -zxf lwjgl2arm32.tar.gz -C ~/lwjgl2arm32
 cd lwjgl2arm32
