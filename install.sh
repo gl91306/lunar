@@ -92,4 +92,4 @@ Categories=Game;
 Type=Application
 Terminal=false" > "$HOME/Desktop/Lunar Client"
 
-$HOME/lunarclient-2.7.3c-armv7l.AppImage
+$HOME/lunarclient-2.8.0-armv7l.AppImage
