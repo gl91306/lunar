@@ -3,8 +3,10 @@
 #Made for Lunar-Client by gl91306
 
 #install modprobe if not already installed
+sudo apt-get install kmod
 
 #Run modprobe fuse
+sudo modprobe fuse
 
 cd
 #Download client
@@ -33,23 +35,15 @@ tar -zxf lwjgl2arm32.tar.gz -C ~/lwjgl2arm32
 cd lwjgl2arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
 wget https://github.com/gl91306/lunar/raw/master/libgstreamer-lite.so
-wget https://github.com/gl91306/lunar/raw/master/libjfxmedia.so
 cd
 cd lwjgl3arm32
 wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
 wget https://github.com/gl91306/lunar/raw/master/libgstreamer-lite.so
-wget https://github.com/gl91306/lunar/raw/master/libjfxmedia.so
-https://github.com/gl91306/lunar/raw/master/liblwjgl_tinyfd.so
+wget https://github.com/gl91306/lunar/raw/master/liblwjgl_tinyfd.so
 cd
 sudo apt-get install unzip
-wget https://github.com/gl91306/lunar/raw/master/javafx-sdk-17.zip
 mkdir lunarassets
-unzip javafx-sdk-17.zip -d $HOME/lunarassets
 cd lunarassets
-cd javafx-sdk-17
-cd lib
-rm -rf libjfxwebkit.so
-wget https://github.com/gl91306/lunar/raw/master/libjfxwebkit.so
 cd
 #Change perms of Launcher
 sudo chmod +x $HOME/lunarclient-2.8.0-armv7l.AppImage
