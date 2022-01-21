@@ -26,3 +26,5 @@ chmod +x install64.sh
 Thats it!
 
 Here's a Youtube video for the installation: https://youtu.be/-2LZG9YSKZg
+
+:D
