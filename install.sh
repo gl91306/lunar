@@ -71,7 +71,7 @@ echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage
+Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
@@ -80,7 +80,7 @@ Terminal=false" > "$HOME/.local/share/applications/Lunar-Client.desktop"
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage
+Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
