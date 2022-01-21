@@ -8,6 +8,9 @@ wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.8.0-arm64.AppImag
 if [ ! -d ~/lwjgl3arm64 ]; then
     mkdir ~/lwjgl3arm64
 fi
+if [ ! -d ~/lwjgl2arm64 ]; then
+    mkdir ~/lwjgl2arm64
+fi
 if [ ! -f lwjgl3arm64.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm64.tar.gz
 fi
