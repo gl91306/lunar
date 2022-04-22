@@ -8,11 +8,14 @@ wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.8.0-arm64.AppImag
 if [ ! -d ~/lwjgl3arm64 ]; then
     mkdir ~/lwjgl3arm64
 fi
+if [ ! -d ~/lwjgl2arm64 ]; then
+    mkdir ~/lwjgl2arm64
+fi
 if [ ! -f lwjgl3arm64.tar.gz ]; then
     wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm64.tar.gz
 fi
 if [ ! -f lwjgl2arm64.tar ]; then
-    https://raw.githubusercontent.com/gl91306/lunar/03b8f8735ba30d2a849a4d7321254b085f00cb88/lwjgl2arm64.tar
+    wget https://raw.githubusercontent.com/gl91306/lunar/03b8f8735ba30d2a849a4d7321254b085f00cb88/lwjgl2arm64.tar
 fi
 if [ ! -f OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.1_12.tar.gz ]; then
     wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.1_12.tar.gz
@@ -57,7 +60,7 @@ echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.8.0-arm64.AppImage
+Exec=$HOME/lunarclient-2.8.0-arm64.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
@@ -66,7 +69,7 @@ Terminal=false" > "$HOME/.local/share/applications/Lunar-Client.desktop"
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.8.0-arm64.AppImage
+Exec=$HOME/lunarclient-2.8.0-arm64.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
