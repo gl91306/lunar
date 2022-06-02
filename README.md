@@ -28,3 +28,5 @@ Thats it!
 Here's a Youtube video for the installation: https://youtu.be/-2LZG9YSKZg
 
 :D
+
+Find it on Pi-ware!
