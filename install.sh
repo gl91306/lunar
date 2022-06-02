@@ -10,56 +10,13 @@ sudo modprobe fuse
 
 cd
 #Download client
-wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.8.0-armv7l.AppImage
-if [ ! -d ~/lwjgl3arm32 ]; then
-    mkdir ~/lwjgl3arm32
-fi
-if [ ! -d ~/lwjgl2arm32 ]; then
-    mkdir ~/lwjgl2arm32
-fi
-if [ ! -f OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz ]; then
-    wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz
-fi
-if [ ! -f lwjgl3arm32.tar.gz ]; then
-    wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm32.tar.gz
-fi
-if [ ! -f lwjgl2arm32.tar.gz ]; then
-    wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl2arm32.tar.gz
-fi
-if [ ! -d /opt/jdk ]; then
-    sudo mkdir /opt/jdk
-fi
-sudo tar -zxf OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz -C /opt/jdk
-tar -zxf lwjgl3arm32.tar.gz -C ~/lwjgl3arm32
-tar -zxf lwjgl2arm32.tar.gz -C ~/lwjgl2arm32
-cd lwjgl2arm32
-wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
-wget https://github.com/gl91306/lunar/raw/master/libgstreamer-lite.so
-cd
-cd lwjgl3arm32
-wget https://github.com/gl91306/lunar/raw/master/libwebp-imageio32.so
-wget https://github.com/gl91306/lunar/raw/master/libgstreamer-lite.so
-wget https://github.com/gl91306/lunar/raw/master/liblwjgl_tinyfd.so
-cd
+wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.10.1-armv7l.AppImage
 sudo apt-get install unzip
 mkdir lunarassets
 cd lunarassets
 cd
 #Change perms of Launcher
 sudo chmod +x $HOME/lunarclient-2.8.0-armv7l.AppImage
-
-#Run launcher
-cd
-rm -rf jdk-16.0.1+9-jre.tar.gz
-rm -rf javafx-sdk-17.zip
-rm -rf lwjgl2arm32.tar.gz
-rm -rf lwjgl3arm32.tar.gz
-cd
-cd lwjgl2arm32
-rm -rf libopenal.so
-cd
-cp lwjgl3arm32/libopenal.so $HOME/lwjgl2arm32
-
 #Add icon
 cd
 cd lunarassets
@@ -71,7 +28,7 @@ echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage --no-sandbox
+Exec=$HOME/lunarclient-2.10.1-armv7l.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
@@ -80,10 +37,10 @@ Terminal=false" > "$HOME/.local/share/applications/Lunar-Client.desktop"
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.8.0-armv7l.AppImage --no-sandbox
+Exec=$HOME/lunarclient-2.10.1-armv7l.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
 Terminal=false" > "$HOME/Desktop/Lunar Client"
 
-$HOME/lunarclient-2.8.0-armv7l.AppImage
+$HOME/lunarclient-2.10.1-armv7l.AppImage
