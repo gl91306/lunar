@@ -1,6 +1,6 @@
 #!/bin/bash
 #Script created by oxmc and gl91306
-#Made for Lunar-Client by gl91306
+#Made for Lunar Client for arm, a port by gl91306
 
 cd
 #Download client
