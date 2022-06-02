@@ -1,5 +1,5 @@
 #!/bin/bash
-#Script created by oxmc
+#Script created by oxmc and gl91306
 #Made for Lunar-Client by gl91306
 
 #install modprobe if not already installed
