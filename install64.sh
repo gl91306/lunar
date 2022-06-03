@@ -10,8 +10,7 @@ mkdir lunarassets
 sudo apt-get install unzip
 cd
 #Change perms of Launcher
-sudo chmod +x $HOME/lunarclient-2.8.0-arm64.AppImage
-
+sudo chmod +x $HOME/lunarclient-2.10.1-arm64.AppImage
 #Add icon
 cd
 cd lunarassets
