@@ -16,7 +16,7 @@ mkdir lunarassets
 cd lunarassets
 cd
 #Change perms of Launcher
-sudo chmod +x $HOME/lunarclient-2.8.0-armv7l.AppImage
+sudo chmod +x $HOME/lunarclient-2.10.1-armv7l.AppImage
 #Add icon
 cd
 cd lunarassets
