@@ -9,7 +9,7 @@ then
 fi
 if [[ -f "/usr/bin/pacman" ]]
 then
-    pacman -S kmod
+    sudo pacman -S kmod
 fi
 
 
