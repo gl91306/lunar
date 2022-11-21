@@ -7,7 +7,6 @@ cd
 wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.10.1-arm64.AppImage
 cd
 mkdir lunarassets
-sudo apt-get install unzip
 cd
 #Change perms of Launcher
 sudo chmod +x $HOME/lunarclient-2.10.1-arm64.AppImage
