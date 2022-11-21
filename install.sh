@@ -3,7 +3,15 @@
 #Made for Lunar Client for arm, a port by gl91306
 
 #install modprobe if not already installed
-sudo apt-get install kmod
+if [[ -f "/usr/bin/apt" ]]
+then
+    sudo apt-get install kmod
+fi
+if [[ -f "/usr/bin/pacman" ]]
+then
+    pacman -S kmod
+fi
+
 
 #Run modprobe fuse
 sudo modprobe fuse
@@ -11,7 +19,7 @@ sudo modprobe fuse
 cd
 #Download client
 wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.10.1-armv7l.AppImage
-sudo apt-get install unzip
+
 mkdir lunarassets
 cd lunarassets
 cd
