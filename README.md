@@ -4,6 +4,8 @@ This is a build of the Moonsworth Lunar Client for ARM processors. Because Lunar
 There is also a script for automatically changing the lwjgl args for ARM.
 There's also support for Microsoft Accounts!
 
+# TY TO KOLPIX 4 HELPING ME BUILD for ARM64 FOR LATEST VERSION
+
 
 # Dependecies
 
