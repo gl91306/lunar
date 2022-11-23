@@ -52,7 +52,7 @@ Look for the command that starts with /home/whatever/.lunarclient/234234234/some
 
 Copy that and save it somewhere
 
-Now go to your desktop and create a new file and name it Lunar client (ur version name here, so you can tell the diffrence from the main one)
+Now go to your desktop and create a new file and name it Lunar Client (ur version name here, so you can tell the diffrence from the main one)
 
 In that file add
 ```
