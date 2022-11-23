@@ -9,5 +9,7 @@ rm -rf lunarclient-2.7.2-armv7l.AppImage
 rm -rf lunarclient-2.7.0-armv7l.AppImage
 rm -rf lunarclient-2.10.1-arm64.AppImage
 rm -rf lunarclient-2.10.1-armv7l.AppImage
+rm -rf lunarclient-2.14.0-arm64.AppImage
+rm -rf lunarclient-2.14.0-armv7l.AppImage
 rm -rf '$HOME/lunarassets'
 rm -rf "$HOME/.local/share/applications/Lunar-Client.desktop"
