@@ -65,7 +65,7 @@ Categories=Game;
 Type=Application
 Terminal=false
 Name[en_US]=lunar (version)
-Path=/home/pi/.lunarclient/offline/(version, be sure to look in the folder to find the exact version folder name)
+Path=/home/pi/.lunarclient/offline/multiver
 Comment[en_US]=(version) lmao
 GenericName=sdfasdf idek
 ```
