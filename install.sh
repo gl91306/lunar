@@ -17,14 +17,20 @@ fi
 sudo modprobe fuse
 
 cd
-#Download client
-wget https://github.com/gl91306/lunar/raw/master/lunarclient-2.14.0-armv7l.AppImage
+#Download client in parts
+echo "downloading split files"
+wget https://github.com/gl91306/lunar/raw/master/lunarclient-3.0.3-armv7l.AppImage.1
+wget https://github.com/gl91306/lunar/raw/master/lunarclient-3.0.3-armv7l.AppImage.1
+#Combine
+echo "combining split files"
+cat lunarclient-3.0.3-armv7l.AppImage.* > lunarclient-3.0.3-armv7l.AppImage
+rm -rf lunarclient-3.0.3-armv7l.AppImage.*
 
 mkdir lunarassets
 cd lunarassets
 cd
 #Change perms of Launcher
-sudo chmod +x $HOME/lunarclient-2.14.0-armv7l.AppImage
+sudo chmod +x $HOME/lunarclient-3.0.3-armv7l.AppImage
 #Add icon
 cd
 cd lunarassets
@@ -36,7 +42,7 @@ echo "Creating a desktop entry for Lunar-Client..."
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.14.0-armv7l.AppImage --no-sandbox
+Exec=$HOME/lunarclient-3.0.3-armv7l.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
@@ -45,10 +51,11 @@ Terminal=false" > "$HOME/.local/share/applications/Lunar-Client.desktop"
 echo "[Desktop Entry]
 Name=Lunar Client
 Comment=Lunar Client for Rpi made by PiKATchu on Discord.
-Exec=$HOME/lunarclient-2.14.0-armv7l.AppImage --no-sandbox
+Exec=$HOME/lunarclient-3.0.3-armv7l.AppImage --no-sandbox
 Icon=$HOME/lunarassets/lunarclient.png
 Categories=Game;
 Type=Application
 Terminal=false" > "$HOME/Desktop/Lunar Client"
 
-$HOME/lunarclient-2.14.0-armv7l.AppImage
+echo "Installation complete, running..."
+$HOME/lunarclient-3.0.3-armv7l.AppImage
