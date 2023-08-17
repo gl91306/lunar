@@ -6,7 +6,7 @@ cd
 #Download client in parts
 echo "downloading split files"
 wget https://github.com/gl91306/lunar/raw/master/lunarclient-3.0.3-arm64.AppImage.1
-wget https://github.com/gl91306/lunar/raw/master/lunarclient-3.0.3-arm64.AppImage.1
+wget https://github.com/gl91306/lunar/raw/master/lunarclient-3.0.3-arm64.AppImage.2
 #Combine
 echo "combining split files"
 cat lunarclient-3.0.3-arm64.AppImage.* > lunarclient-3.0.3-arm64.AppImage
